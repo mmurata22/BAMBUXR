@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "BAMBUXR",
+			"path": "../../../../../Documents/BAMBUXR"
+		},
+		{
+			"name": "webxr-scene-shell",
+			"path": "../.."
+		}
+	],
+	"settings": {}
+}
