@@ -9,6 +9,7 @@ import basicSsl from '@vitejs/plugin-basic-ssl'
 const useHttps = process.env.HTTPS === 'true'
 
 export default defineConfig({
+  base: '/BAMBUXR/',
   plugins: [react(), ...(useHttps ? [basicSsl()] : [])],
   server: {
     https: useHttps,
