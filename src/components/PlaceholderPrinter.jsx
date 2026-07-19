@@ -11,4 +11,4 @@ export default function X1CPrinter({ position = [0, 0, -1.2] }) {
   return <primitive object={scene} position={position} />
 }
 
-useGLTF.preload('/models/x1c.glb')
+useGLTF.preload('${import.meta.env.BASE_URL}/models/x1c.glb')

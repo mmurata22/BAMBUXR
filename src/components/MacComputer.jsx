@@ -9,4 +9,4 @@ export default function MacComputer({ position = [0.42, 0.7336, -1.2], scale = D
   return <primitive object={scene} position={position} scale={scale} name="mac-computer" />
 }
 
-useGLTF.preload('/models/maccomputer.glb')
+useGLTF.preload('${import.meta.env.BASE_URL}/models/maccomputer.glb')

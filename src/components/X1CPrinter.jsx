@@ -60,4 +60,4 @@ export default function X1CPrinter({ position = [0, 0, -1.2], scale = MM_TO_M, a
   return <primitive object={scene} position={position} scale={scale} name="x1c-printer" />
 }
 
-useGLTF.preload('/models/x1c.glb')
+useGLTF.preload('${import.meta.env.BASE_URL}/models/x1c.glb')

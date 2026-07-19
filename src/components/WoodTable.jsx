@@ -9,4 +9,4 @@ export default function WoodTable({ position = [0, 0, -1.2], rotation = [0, Math
   return <primitive object={scene} position={position} rotation={rotation} scale={scale} name="wood-table" />
 }
 
-useGLTF.preload('/models/woodtable.glb')
+useGLTF.preload('${import.meta.env.BASE_URL}/models/woodtable.glb')
