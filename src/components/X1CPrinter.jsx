@@ -16,7 +16,7 @@ const HOTSPOTS = {
 }
 
 export default function X1CPrinter({ position = [0, 0, -1.2], scale = MM_TO_M, activeHotspot = null }) {
-  const { scene } = useGLTF('/models/x1c.glb')
+  const { scene } = useGLTF(`${import.meta.env.BASE_URL}models/x1c.glb`)
   const meshMap = useRef(new Map())          // hotspot name -> mesh
   const originalEmissive = useRef(new Map()) // mesh uuid -> { color, intensity }
 
@@ -60,4 +60,4 @@ export default function X1CPrinter({ position = [0, 0, -1.2], scale = MM_TO_M, a
   return <primitive object={scene} position={position} scale={scale} name="x1c-printer" />
 }
 
-useGLTF.preload('${import.meta.env.BASE_URL}/models/x1c.glb')
+useGLTF.preload(`${import.meta.env.BASE_URL}models/x1c.glb`)

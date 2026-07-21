@@ -2,7 +2,7 @@ import { useGLTF } from '@react-three/drei'
 import { useEffect } from 'react'
 
 export default function X1CPrinter({ position = [0, 0, -1.2] }) {
-  const { scene } = useGLTF('/models/x1c.glb')
+  const { scene } = useGLTF(`${import.meta.env.BASE_URL}models/x1c.glb`)
 
   useEffect(() => {
     console.log(scene.children)
@@ -11,4 +11,4 @@ export default function X1CPrinter({ position = [0, 0, -1.2] }) {
   return <primitive object={scene} position={position} />
 }
 
-useGLTF.preload('${import.meta.env.BASE_URL}/models/x1c.glb')
+useGLTF.preload(`${import.meta.env.BASE_URL}models/x1c.glb`)
